@@ -1,0 +1,22 @@
+﻿<h1>Exercise 1</h1>
+<h2>Author: Igor Morozov, ID 332562123, e-mail: igor.morozov705gmail.com</h2>
+<p>This program includes files: <br> ResctrictedView: main class for starting the program.<br> CompositWebPageFilter: This class implements WebPageFilter and can includes two implementations of this: English filter and Javascript filter. <br> 
+EnglishDocumentsFilter: this class implements WebPageFilter and blockes all sites if these languages not English <br> 
+HTMLTagRemover : removes HTML tags from loaded page <br> 
+ReadFromFile: open and read a file, and return the lines in the file as a list of Strings.<br> 
+RejectJavaScriptFilter: filter for web-sites: blocks sites with java-script code inside<br> 
+WebPageFilterFactory: the class for creating class of filter.<br> 
+</p>
+
+<p>
+  English filter uses checking for mostly common English words: it takes these words from external  file<br> "99 common English words" and checks if minimum 5 words from this list appear in the text.
+</p>
+
+<p>
+   The filter for javascript gets whole text with HTML tags and seeks for string "< script >"inside
+</p>
+
+<p> 
+  This project includes two configurations: each one for one specific filter:  first with name "English Filter" <br>
+ with arguments "-english https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal"  and second "Javascript Filter" with arguments <br>
+"-javascript http://www.hac.ac.il"
